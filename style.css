@@ -17,7 +17,6 @@ ul {
 }
 img {
   width: 100%;
-  height: auto;
 }
 [type="radio"] {
   display: none;
@@ -372,15 +371,22 @@ footer p:last-child {
     width: 100%;
     margin-bottom: 0.5em;
   }
+  main section.offers div.country div.first figure {
+    width: 100%;
+  }
+  main section.offers div.country div.first figure img {
+  width: 100%;
+  }
   main section.offers div.country div.sec {
     flex-direction: column;
     width: 100%;
   }
   main section.offers div.country div.sec figure {
     width: 100%;
+    margin-bottom: 0.5em;
   }
   main section.offers div.country div.sec figure img {
-    margin-bottom: 0.5em;
+    width: 100%;
   }
   main section.explore div.parent {
     flex-direction: column;
