@@ -1,0 +1,388 @@
+/* General Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+}
+:root {
+  --gray: #757575;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+[type="radio"] {
+  display: none;
+}
+/* Navigation Bar */
+nav.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+nav i.fa-search {
+  color: var(--gray);
+}
+nav div {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div:hover,
+i.fa-search:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+nav div i {
+  margin-right: 0.5em;
+}
+nav div,
+i.fa-search {
+  padding: 0.5em;
+}
+/* Header */
+header {
+  height: 100vh;
+  background-image: url(london2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* section */
+header section {
+  background-color: rgba(245, 245, 245, 0.9);
+  width: 85%;
+}
+/* nav bar of the section*/
+header section nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+header section nav ul {
+  list-style: none;
+  display: flex;
+}
+header section nav ul li label {
+  padding: 0.5em 1em;
+  display: block;
+  text-align: center;
+}
+header section nav ul li label:hover {
+  cursor: pointer;
+}
+header section nav ul li:hover {
+  background-color: rgb(193, 193, 193);
+  cursor: pointer;
+  color: black;
+}
+header section nav ul li i {
+  margin-right: 1em;
+}
+/* header section content */
+header section div.flight,
+div.rental,
+div.hotel {
+  padding: 1em;
+  display: none;
+}
+header section div h2 {
+  color: #757575;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+header section div.flight form div.formcontent {
+  display: flex;
+  padding: 0.5em 0 1em 0;
+}
+header section div.flight form div.formcontent div {
+  width: 100%;
+}
+header section div form label {
+  color: #757575;
+}
+header section div p {
+  margin: 0.5em 0;
+  line-height: 2em;
+}
+header section div p span {
+  background-color: rgb(255, 94, 0);
+  padding: 0.2em;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  text-transform: uppercase;
+}
+header section div [type="text"] {
+  width: 90%;
+  height: 3em;
+  margin: 1em 0;
+  padding-left: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+header section div [type="submit"] {
+  background-color: #757575;
+  padding: 0.5em;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+header section div [type="submit"]:hover {
+  cursor: pointer;
+  background-color: #aeacac;
+  color: #3c3b3b;
+}
+/* logical for the ul of the section's nav */
+header section input#flight:checked ~ div.flight {
+  display: block;
+}
+header section input#hotel:checked ~ div.hotel {
+  display: block;
+}
+header section input#rental:checked ~ div.rental {
+  display: block;
+}
+
+header section input#flight:checked ~ nav ul li label[for="flight"] {
+  background-color: red;
+}
+header section input#hotel:checked ~ nav ul li label[for="hotel"] {
+  background-color: red;
+}
+header section input#rental:checked ~ nav ul li label[for="rental"] {
+  background-color: red;
+}
+/* Main content of the page */
+main {
+  padding: 1em;
+}
+main h2 {
+  margin: 1em 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+main p {
+  margin: 0.5em 0;
+}
+/* good offers right now */
+main section.offers div.country {
+  display: flex;
+  justify-content: space-between;
+}
+main section.offers div.country div figure {
+  position: relative;
+  display: flex;
+}
+main section.offers div.country div figure figcaption {
+  position: absolute;
+  color: white;
+  font-size: 1.3em;
+  bottom: 0.5em;
+  left: 0.5em;
+}
+main section.offers div.country div.first {
+  width: calc(50% - 0.5em);
+  display: flex;
+}
+main section.offers div.country div.sec {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+main section.offers div.country div.sec figure {
+  width: calc(50% - 0.25em);
+  height: calc(50% - 0.25em);
+}
+/* section of explore nature */
+main section.explore div.parent {
+  display: flex;
+  justify-content: space-between;
+}
+main section.explore div.parent figure {
+  width: calc(50% - 0.25em);
+  background-color: white;
+}
+main section.explore div.parent figure figcaption {
+  margin: 1em;
+}
+main section.explore div.parent figure figcaption p {
+  margin: 1.5em 0;
+}
+main section.explore div.parent figure figcaption button {
+  background-color: transparent;
+  border: none;
+  padding: 1em;
+  text-transform: capitalize;
+}
+main section.explore div.parent figure figcaption button:hover {
+  background-color: rgba(201, 201, 201, 0.508);
+  cursor: pointer;
+}
+/* get the best offers */
+main section.best-offer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1em 0.5em;
+  margin: 1em 0;
+}
+main section.best-offer:hover {
+  background-color: black;
+}
+main section.best-offer p {
+  margin: 1em 0;
+}
+main section.best-offer form {
+  display: flex;
+  flex-direction: column;
+}
+main section.best-offer form input:first-of-type {
+  height: 3em;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+main section.best-offer form input[type="submit"] {
+  align-self: flex-start;
+  padding: 0.5em 1em;
+  color: white;
+  background-color: red;
+  border: none;
+  letter-spacing: 0.1em;
+}
+main section.best-offer form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #c8c8c8;
+  color: black;
+}
+/* Contact section */
+main section.contact {
+  padding: 0.5em;
+}
+main section.contact ul {
+  margin-top: 1em;
+}
+main section.contact ul li {
+  margin-bottom: 0.5em;
+}
+main section.contact ul li i {
+  margin-right: 0.5em;
+}
+main section.contact form {
+  display: flex;
+  flex-direction: column;
+}
+main section.contact form input:not([type="submit"]) {
+  background-color: #ffffff;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: none;
+  height: 4em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.169);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+main section.contact form input[type="submit"] {
+  align-self: flex-start;
+  background-color: black;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.169);
+  letter-spacing: 0.1em;
+}
+main section.contact form input[type="submit"]:hover {
+  background-color: #d9d6d6;
+  color: black;
+  cursor: pointer;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer p {
+  margin: 1em;
+  text-transform: capitalize;
+}
+footer ul {
+  display: flex;
+  gap: 1em;
+}
+footer ul li i:hover {
+color: #757575;
+  cursor: pointer;
+}
+footer p i {
+  color: red;
+}
+footer p:last-child {
+  margin-top: 0;
+}
+/* media */
+@media screen and (max-width: 600px) {
+  main section.offers div.country {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  main section.offers div.country div.first {
+    width: 100%;
+  }
+  main section.offers div.country div.sec {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5em;
+  }
+  main section.offers div.country div.sec figure {
+    width: 100%;
+  }
+  main section.explore div.parent {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  main section.explore div.parent figure {
+    width: 100%;
+  }
+}

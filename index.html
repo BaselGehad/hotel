@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Start | Again</title>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8ceece6883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+      <div class="logo"><i class="fa-solid fa-location-dot"></i>Logo</div>
+      <i class="fa-solid fa-search"></i>
+    </nav>
+    <!-- Header -->
+    <header>
+      <section>
+        <!-- inputs -->
+        <input type="radio" id="flight" name="booking" checked />
+        <input type="radio" id="hotel" name="booking" />
+        <input type="radio" id="rental" name="booking" />
+        <!-- Nav bar -->
+        <nav>
+          <ul>
+            <li>
+              <label for="flight"
+                ><i class="fa-solid fa-plane"></i>Flight</label
+              >
+            </li>
+            <li>
+              <label for="hotel"><i class="fa-solid fa-bed"></i> Hotel</label>
+            </li>
+            <li>
+              <label for="rental"><i class="fa-solid fa-car"></i> Rental</label>
+            </li>
+          </ul>
+        </nav>
+        <!-- flight content -->
+        <div class="flight">
+          <h2>Travel the world with us</h2>
+          <form action="">
+            <div class="formcontent">
+              <div class="fromsec">
+                <label for="from">From</label>
+                <br />
+                <input
+                  type="text"
+                  name="from"
+                  id="from"
+                  placeholder="Departing from"
+                />
+              </div>
+              <div class="tosec">
+                <label for="to">To</label>
+                <br />
+                <input type="text" name="to" id="to" placeholder="Arriving" />
+              </div>
+            </div>
+            <input type="submit" value="Search and find dates" />
+          </form>
+        </div>
+        <!-- hotel content -->
+        <div class="hotel">
+          <h2>Find the best hotels</h2>
+          <p>Cook a hotel with us and get the best fares and promotions.</p>
+          <p>We know hotels - we know comfort.</p>
+          <input type="submit" value="Search Hotels" />
+        </div>
+        <!-- rental content -->
+        <div class="rental">
+          <h2>Best car rental in the world!</h2>
+          <p>
+            <span>Discount!</span> Special offer if you book today: 25% off
+            anywhere in the wordk with CarServiceRentalRUs
+          </p>
+          <input type="text" placeholder="Pick-up point" />
+          <input type="submit" value="Search Availability" />
+        </div>
+      </section>
+    </header>
+    <!-- Main Content of the page -->
+    <main>
+      <!-- Sectin of Good offers right now -->
+      <section class="offers">
+        <h2>good offers right now</h2>
+        <p>Up to 50% discount.</p>
+        <div class="country">
+          <div class="first">
+            <figure>
+              <img src="cinqueterre.jpg" alt="cinqueterre" />
+              <figcaption>Cinque Terre</figcaption>
+            </figure>
+          </div>
+          <div class="sec">
+            <figure>
+              <img src="newyork2.jpg" alt="newyork" />
+              <figcaption>New York</figcaption>
+            </figure>
+            <figure>
+              <img src="sanfran.jpg" alt="sanfran" />
+              <figcaption>San Francisco</figcaption>
+            </figure>
+            <figure>
+              <img src="pisa.jpg" alt="pisa" />
+              <figcaption>Pisa</figcaption>
+            </figure>
+            <figure>
+              <img src="paris.jpg" alt="paris" />
+              <figcaption>Paris</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Section of Ecplore Nature -->
+      <section class="explore">
+        <h2>Explore Nature</h2>
+        <p>Travel with us and see nature at its finest.</p>
+        <div class="parent">
+          <figure>
+            <img src="ocean2.jpg" alt="ocean" />
+            <figcaption>
+              <h2>west coast, norway</h2>
+              <small>Roundtrip from $79</small>
+              <p>praesnt tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button>buy tickets</button>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="mountains2.jpg" alt="mountains" />
+            <figcaption>
+              <h2>mountains, Asturia</h2>
+              <small>Roundtrip from $49</small>
+              <p>praesnt tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button>buy tickets</button>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- Card of get the best offers -->
+      <section class="best-offer">
+        <h2>Get the best offers first!</h2>
+        <p>Join our nwesletter.</p>
+        <form action="">
+          <label for="email">E-mail</label>
+          <input type="email" placeholder="Your Email address"/>
+          <input type="submit" value="Subscribe" />
+        </form>
+      </section>
+      <!-- Contact -->
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>Let us book your next trip!</p>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Chicago, US</li>
+          <li><i class="fa-solid fa-phone"></i> Phone: +00 151515</li>
+          <li><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</li>
+        </ul>
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Message" />
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>find us on</p>
+      <ul>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-snapchat"></i></li>
+        <li><i class="fa-brands fa-pinterest"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
+      <p>Made with <i class="fa-solid fa-heart"></i> By Basel Gehad</p>
+      <p>This Template From W3</p>
+    </footer>
+  </body>
+</html>
