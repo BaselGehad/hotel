@@ -74,7 +74,7 @@ header section {
 }
 /* nav bar of the section*/
 header section nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
   color: white;
 }
 header section nav ul {
@@ -255,7 +255,7 @@ main section.explore div.parent figure figcaption button:hover {
 }
 /* get the best offers */
 main section.best-offer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
   color: white;
   padding: 1em 0.5em;
   margin: 1em 0;
