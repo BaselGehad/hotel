@@ -365,24 +365,26 @@ footer p:last-child {
 @media screen and (max-width: 600px) {
   main section.offers div.country {
     flex-direction: column;
-    gap: 0.5em;
   }
   main section.offers div.country div.first {
     width: 100%;
+    margin-bottom: 0.5em;
   }
   main section.offers div.country div.sec {
     flex-direction: column;
     width: 100%;
-    gap: 0.5em;
   }
   main section.offers div.country div.sec figure {
     width: 100%;
   }
+  main section.offers div.country div.sec figure img {
+    margin-bottom: 0.5em;
+  }
   main section.explore div.parent {
     flex-direction: column;
-    gap: 0.5em;
   }
   main section.explore div.parent figure {
     width: 100%;
+    margin-bottom: 0.5em;
   }
 }
