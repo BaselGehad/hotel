@@ -204,6 +204,7 @@ main section.offers div.country {
 main section.offers div.country div figure {
   position: relative;
   display: flex;
+  width: 100%;
 }
 main section.offers div.country div figure figcaption {
   position: absolute;
