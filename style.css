@@ -349,7 +349,9 @@ footer p {
 }
 footer ul {
   display: flex;
-  gap: 1em;
+}
+footer ul li i {
+  margin: 0 0.5em;
 }
 footer ul li i:hover {
 color: #757575;
