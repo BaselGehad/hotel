@@ -408,4 +408,7 @@ footer p:last-child {
     width: 100%;
     margin-bottom: 0.5em;
   }
+  main section.explore div.parent figure:last-child {
+    margin-bottom: 0;
+  }
 }
