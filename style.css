@@ -102,10 +102,14 @@ header section div.flight,
 div.rental,
 div.hotel {
   padding: 1em;
-  display: none;
+  opacity: 0;
+  position: absolute;
+  background-color: #ffffffbd;
+  width: 100%;
+  transition: .5s;
 }
 header section div h2 {
-  color: #757575;
+  color: #000;
   font-weight: 400;
   margin: 0.5em 0;
 }
@@ -166,15 +170,14 @@ header section div [type="submit"]:hover {
 }
 /* logical for the ul of the section's nav */
 header section input#flight:checked ~ div.flight {
-  display: block;
+  opacity: 1;
 }
 header section input#hotel:checked ~ div.hotel {
-  display: block;
+  opacity: 1;
 }
 header section input#rental:checked ~ div.rental {
-  display: block;
+  opacity: 1;
 }
-
 header section input#flight:checked ~ nav ul li label[for="flight"] {
   background-color: red;
 }
