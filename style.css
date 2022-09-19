@@ -395,6 +395,9 @@ footer p:last-child {
     width: 100%;
     margin-bottom: 0.5em;
   }
+  main section.offers div.country div.sec figure:last-child {
+  margin-bottom: 0;
+  }
   main section.offers div.country div.sec figure img {
     width: 100%;
   }
