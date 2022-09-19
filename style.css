@@ -71,6 +71,7 @@ header {
 header section {
   background-color: rgba(245, 245, 245, 0.9);
   width: 85%;
+  position: relative;
 }
 /* nav bar of the section*/
 header section nav {
