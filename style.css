@@ -123,7 +123,7 @@ header section div.flight form div.formcontent div {
   width: 100%;
 }
 header section div form label {
-  color: #757575;
+  color: #000;
 }
 header section div p {
   margin: 0.5em 0;
@@ -153,7 +153,7 @@ header section div [type="text"] {
   -o-border-radius: 0.2em;
 }
 header section div [type="submit"] {
-  background-color: #757575;
+  background-color: #000;
   padding: 0.5em;
   border: none;
   font-size: 1.2em;
