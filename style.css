@@ -204,6 +204,7 @@ main p {
 main section.offers div.country {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px 0px #0000008f;
 }
 main section.offers div.country div figure {
   position: relative;
@@ -236,6 +237,7 @@ main section.offers div.country div.sec figure {
 main section.explore div.parent {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px 0px #0000008f;
 }
 main section.explore div.parent figure {
   width: calc(50% - 0.25em);
@@ -263,6 +265,7 @@ main section.best-offer {
   color: white;
   padding: 1em 0.5em;
   margin: 1em 0;
+  box-shadow: 0px 0px 10px 0px #0000008f;
 }
 main section.best-offer:hover {
   background-color: black;
@@ -295,6 +298,7 @@ main section.best-offer form input[type="submit"]:hover {
 /* Contact section */
 main section.contact {
   padding: 0.5em;
+  box-shadow: 0px 0px 10px 0px #0000008f;
 }
 main section.contact ul {
   margin-top: 1em;
