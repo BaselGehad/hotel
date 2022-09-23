@@ -173,12 +173,15 @@ header section div [type="submit"]:hover {
 /* logical for the ul of the section's nav */
 header section input#flight:checked ~ div.flight {
   opacity: 1;
+  z-index: 1;
 }
 header section input#hotel:checked ~ div.hotel {
   opacity: 1;
+  z-index: 1;
 }
 header section input#rental:checked ~ div.rental {
   opacity: 1;
+  z-index: 1;
 }
 header section input#flight:checked ~ nav ul li label[for="flight"] {
   background-color: red;
